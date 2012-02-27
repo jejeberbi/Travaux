@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[francais]{babel}
 \usepackage[top=2cm, bottom=2cm, left=4cm, right=4cm]{geometry}
+\usepackage{url}
 %\usepackage{charter}
 \pagestyle{plain}
 \author{Jejeberbi : www.jejeberbi.eu}
@@ -21,7 +22,10 @@
 	Pouvoir rejouer à des jeux anciens, qui ont marquer notre jeunesse, est quelque chose de sublime. Cependant, ne disposant en général plus des consoles de jeux, il devient dûr d'y rejouer. Mais des alternatives existent, ce document a pour but de présenter les divers outils existants afin de (re--)jouer à des jeux d'antan. Attention, ce document ne traite pas de comment faire un émulateurs et des principes qui sont autour.
 
 \section{\'A qui est destinnée ce document ?}
-	Ce document est destinné à n'importe qui souhaitant en apprendre plus sur les outils de l'émulation, et qui souhaite jouer à quelques jeux. Un émulateur n'est pas un outil pour jouer massivement à des jeux, et ne sert absolument pas à contourner l'achat des jeux. Il est d'ailleurs impossible d'émuler les consoles récente. Si vous souhaitiez donc émuler le dernier jeux de guerre à la mode pour ne pas payer la console, vous êtes au mauvais endroit.
+	Ce document est destinné à n'importe qui souhaitant en apprendre plus sur les outils de l'émulation, et qui souhaite jouer à quelques jeux. Un émulateur n'est pas un outil pour jouer massivement à des jeux, et ne sert absolument pas à contourner l'achat des jeux. Il est d'ailleurs impossible d'émuler les consoles récente. Si vous souhaitiez donc émuler le dernier jeux de guerre à la mode pour ne pas payer la console, vous êtes au mauvais endroit.*
+	
+\section{Principe de l'émulation}
+	Juste avant de commencer à faire du concret, il faut quand même poser les bases de ce qu'est l'émulation en informatique. L'émulation, c'est le fait, que grâce à un logiciel, nous puissions émuler du matériel. La définition du terme émuler est <<~chercher à imiter~>>. Il faut voir dans l'émulation une imitation du comportement physique d'un matériel par un logiciel, et ne pas la confondre avec la simulation, laquelle vise à imiter un modèle abstrait. \,\footnote{D'après Wikipedia, l'encyclopédie libre~: http://fr.wikipedia.org/wiki/Emulation}
 
 \section{Les outils présentés}
 	Je vais donc présenter plusieurs émulateurs et faire le tour des options qu'ils fournissent. Utiliser un émulateur n'a rien de dûr en soit, mais connaître les options qui l'entoure est très intérressant et peux augmenter le confort de jeux si l'on sait s'en servir. Ce document n'est pas exaustif concernant ces options (~et oui je ne connais pas tout~) mais ce que je vais expliquer ici vous donnera, je pense, d'assez bonnes basses pour que vous puissiez vous débrouiller tout seul. \newline
@@ -30,7 +34,7 @@
 	\begin{itemize}
 \item \'Emulateur Playstation 1~: PSX~;
 \item \'Emulateur Playstation 2~: PCSX2~;
-\item \'Emulateur Game Boy Advance, Nintendo DS, avec pleins d'autres outils sympatiques~: WinDS PRO~;
+\item \'Emulateur Game Boy Advance, Nintendo DS, avec pleins d'autres outils sympatiques~: WinDS PRO.
 	\end{itemize}
 Cette liste est certe un peu petite, mais les trois points de vue à propos des options abordés dans ce document vous permettra d'avoir quelques connaissances pour chercher, tester, et configurer d'autres émulateurs. \newline
 
@@ -38,8 +42,18 @@ Cette liste est certe un peu petite, mais les trois points de vue à propos des o
 \section{Présentation}
 \begin{itemize}
 	\item Nom~: PSX~;
-	\item \'Emule la Playstation 2, la console de Sony, sorti autour des années 2000.
-	\item Caractéristiques~: prend en charge le déplacement via Joystick et les cartes mémoires % Voir annexe A et l'utilisation de DS3 Tool.
+	\item \'Emule la Playstation 2, la console de Sony, sorti autour des années 2000~;
+	\item Fonctionne sous Windows et Linux (~necessite certaines dépendances, dont le sujet ne sera pas traité ici~)~;
+	\item Caractéristiques~: prend en charge le déplacement via Joystick\,\footnote{Voir annexe A et l'utilisation de DS3 Tool.} et les cartes mémoires~;
+	\item Site officiel~: \url{http://psxemulator.gazaxian.com/}
 \end{itemize}
+Cet émulateur est l'un des plus facile à prendre en main, et il fonctionne très bien. Il n'y a quasiment aucune différence avec la véritable console, en effet, celle-ci étant assez ancienne, et populaire par le passé, il est aujourd'hui facile de l'émuler. De un par le dur dévelloppement que la popularité de la console a engendré, et de deux, par son ancienneté qui fait que nos machines actuelles ont assez de puissance pour faire tourner les jeux. \,\footnote{Pour la PS2, on aura un peu plus de mal.}
+Télécharger le logiciel sur le site officiel et nous allons pouvoir commencer.
+
+\section{Le système de BIOS}
+	Pour fonctionner, cet émulateur a besoin du <<~bios~>> de la console, nommé <<~scph1001.bin~>>. Ce bios s'extrait de la console, mais vous pouvez aussi le trouver sur Internet (~plus pratique~). Attention cependant, si vous ne possédez pas la console, aller se procurer ce fichier est illégal. \newline
+Maintenant que vous avez le fichier bios (~si vous l'avez trouver~), mettez-le dans le dossier bios. \newline
+
+	Pour lancer l'émulateur, lancer psxfin.exe, et vous voilà devant deux fenêtre, une console\,\footnote{Quelques émulateurs en ont une, pour donner certaines infos}, et une autre fenêtre avec l'écran de jeu. C'est donc celà que nous allons apprendre à connaitre.
 
 \end{document}
