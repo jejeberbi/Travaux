@@ -1,0 +1,153 @@
+\documentclass[t]{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[cyr]{aeguill}
+\usepackage{setspace}
+\usetheme{Hannover}
+
+\date{2012}
+\author{Jérémy B.}
+\title{Les dangers d'Internet}
+
+\begin{document}
+
+\frame{\titlepage}
+
+
+%Table des matières
+\begin{frame}
+\tableofcontents[hideallsubsections]
+\end{frame}
+% Fin table des matières
+
+\section{Qu'est-ce que Internet ?} % On explique ce qu'est le réseau...
+
+\subsection{Niveau matériel} 
+\begin{frame}
+{\Large Comment ça marche au niveau matériel...} % ... Niveau matos ...
+\pause
+
+Il faut savoir que le réseau est~:
+\pause
+
+\begin{itemize}
+	\item à commutation de paquet, contrairement au téléphone qui est à commutation de circuit ;
+	\pause
+
+	\item a-centré, il n'a pas de centre, contrairement au minitel ;
+	\pause
+
+	\item bête à manger du foin, ce qui est au milieu passe son temps à raconter sa vie.
+\end{itemize}
+\pause
+
+Conclusion~: Le "centre" composée de machines débiles se racontent leurs vie pour savoir où est qui et pour ensuite envoyer les données (paquets) qui serviront à l'intelligence, en périphérie du réseau.
+\end{frame}
+
+
+
+
+
+\subsection{Niveau application}
+\begin{frame}
+{\Large ... et au niveau applicatif}
+\pause
+
+Au niveau applicatif, il faut distinguer les:
+\begin{itemize}
+	\item protocoles ;
+	\pause
+	
+	\item les applications utilisant un protocole.
+\end{itemize}
+\pause
+
+Il faut aussi savoir que~: chaque application communicant sur le réseau a besoin d'un port où envoyer et recevoir ses paquets. Il y en a plus de 5000 sur un ordinateur.
+\end{frame}
+
+
+
+\begin{frame}
+{\Large Les protocoles}
+\pause
+
+Les protocoles sont ce qui permet d'échanger d'une certaine façon des paquets entre ordinateur~:
+\pause
+
+\begin{itemize}
+	\item IP~: Internet Protocol, c'est un protocol basique d'adressage de machine ;
+	\pause
+
+	\item TCP ; UDP~: pour le transport basique de paquet ;
+	\pause
+	
+	\item SMTP ; IMAP~: pour l'envoie et la récéption de mail (port 143, 25) ;
+	\pause
+	
+	\item FTP~: pour l'envoi de fichier (port 21) ;
+	\pause
+	
+	\item DNS~: pour lier un nom de domaine à une IP (port 53) ;
+	\pause
+	
+	\item P2P~: peer to peer, pour l'échange de fichier (port aléatoire, variant selon le client P2P) ;
+	\item etc...
+	\end{itemize}
+	
+\end{frame}
+
+
+\begin{frame}
+{\Large Les applications}
+Les applications sont les logiciels qui se servent des protocoles et du matériel pour offrir des services.
+
+Comme~:
+\pause
+\begin{itemize}
+	\item Le mail ;
+	\item MSN ;
+	\item Facebook ;
+	\item Jabber ;
+	\item Ares, uTorrent, Emule etc...
+\end{itemize}
+\end{frame}
+
+
+\subsection{Conclusion}
+\begin{frame}
+{\Large Conclusion première partie}
+\begin{itemize}
+
+	\item La partie matériel a aussi besoin de la partie applicatif (procole).
+\pause
+
+
+	\item Le matériel ne peut communiquer si il n'existe pas un protocole qui le permette (en l'occurence ici, le BGP pour les routeurs).
+\pause
+
+
+	\item Les protocoles se situent à différents "niveaux" les un des autres. Ce qui explique pourquoi certains n'ont pas de ports par défaut.
+\pause
+
+
+	\item Cette caractéristique qui forme Internet s'appelle le {\emph Modèle OSI}.
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+\section{Les dérives}
+\begin{frame}
+{\Large Les dérives}
+Voici maintenant les sois-disantes dérives de l'Internet et 
+
+
+
+
+
+
+\end{document}
