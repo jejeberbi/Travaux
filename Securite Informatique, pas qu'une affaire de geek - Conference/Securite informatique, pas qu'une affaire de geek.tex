@@ -5,19 +5,13 @@
 \usepackage{setspace}
 \usetheme{Goettingen}
 
-\date{2012}
-\author{Jérémy B.}
+\date{Mai 2012}
+\author{Jejeberbi : www.jejeberbi.eu}
 \title{Sécurité informatique, pas qu'une affaire de Geeks}
 
 \begin{document}
 
 \frame{\titlepage}
-
-%Table des matières
-\begin{frame}
-\tableofcontents
-\end{frame}
-% Fin table des matières
 
 \section{Avant de commencer}
 \begin{frame}
@@ -38,6 +32,11 @@ Cette présentation est en vue de valider quatres compétences du B2I, qui sont~:
 Ainsi que de sensibiliser à la sécurité informatique.
 \end{frame}
 
+%Table des matières
+\begin{frame}
+\tableofcontents
+\end{frame}
+% Fin table des matières
 
 \section{Menaces virales}
 \begin{frame}
@@ -85,7 +84,7 @@ La solution extrème consiste à changer pour un système où il n'y a pas de virus 
 {\Large Prise de contrôle, et autre hack}
 Cette menace consiste à attaquer manuellement une cible pré-définis, en profitant d'une faille de sécurité (~aussi appellé Backdoor~). \newline
 \pause
-Le protagoniste de cette attaque peut prendre le contrôle d'un PC pour le pire, ou bien voler des données, en supprimer, voler des mots de passe... \newline
+Le protagoniste de cette attaque peut prendre le contrôle d'un PC pour voler des données, en supprimer, voler des mots de passe... \newline
 \pause
 Pour s'en protéger, il faut~:
 \begin{itemize}
@@ -102,19 +101,105 @@ En général, ce sont plus les proffessionels qui sont visés par ce genre d'attaqu
 \subsection{Attaque DOS}
 \begin{frame}
 {\Large Attaque DOS}
+\pause
 DOS = Denial of service (~Déni de service~). Celà consiste à saturer une machine (~généralement un serveur~) de sorte à ce qu'il ne puisse plus répondre et "crash". \newline
 \pause
 
 C'est la technique qu'utilisent les anonymous afin de protester sur le Net. \newline
+\pause
 
 Ils le font grâce à un petit logiciel appellé LOIC (~Low Orbital Ion Canon~). \newline
 \end{frame}
 
 \section{Sur le web}
+\subsection{Spam}
 \begin{frame}
+{\Large Le Spam}
+Le spam, ce sont les couriers indésirables qui arrivent dans vos boites mails \newline
+\pause
+En général, ce n'est rien d'autre que de la pub.\newline
+\pause
+Le spam peut vite devenir gênant (~récéption de 40 à 50 mails par jour~).
+\pause
+
+Voici comment l'éviter, ou bien le trier~:
+\pause
+\begin{itemize}
+	\item Utiliser un filtre anti-spam (~les webmails ou les logiciels de messagerie en possèdent généralement un~)~;
+	\pause
+	\item Ne pas divulger à tout bout de champs son mail sur le net (~des robots fouillent le web à la recherche d'adresse~), il faut utiliser un format non "clair" pour divulger son adresse, comme~: bidule[at]machin-mail[dot]com~;
+	\pause
+	\item Ne pas s'inscrire sur n'importe quel site (~ceux--ci peuvent collecter des adresses puis les revendre...~).
+\end{itemize}
+\end{frame} % Frame rempli, rien à rajouter dedans.
+
+\subsection{Phishing}
+\begin{frame}
+{\Large Le Phishing}
+Le phishing est une technique consistant à immiter un site afin de voler votre mot de passe. \newline
+\pause
+L'exemple le plus parlant est l'imitation d'un site de banque afin de voler des numéros de cartes de crédits.
+\pause
+
+Pour s'en protéger~:
+\begin{itemize}
+	\item Il suffit de rester prudent (~toujours vérifier l'URL, cliquer sur quelques liens avoisinant si on a un doute~), etc...~;
+	\pause
+	\item Vérifier si la page est sécurisée (~via la mention HTTPS dans l'URL~)~; % Via cette explication, la notion de chiffrement de données afin de ne pas être intercepter est aborder.
+	\pause
+	\item Pour être vraiment sûr, il faut vérifier le certificat d'authentification (~fonction disponible dans les principaux navigateurs~).
+\end{itemize}
 \end{frame}
 
+\section{Vie privée}
+\subsection{Protection de la vie privée}
+\begin{frame}
+{\Large La vie privée est protégée}
+\pause
+«~L'informatique doit être au service de chaque citoyen. Son développement doit s'opérer dans le cadre de la coopération internationale. Elle ne doit porter atteinte ni à l'identité humaine, ni aux droits de l'homme, ni à la vie privée, ni aux libertés individuelles ou publiques.~» \pause
+Article premier de la loi Informatique et liberté de janvier 1978. \newline
+\pause
 
+Notre vie privée, sur Internet est protégée par la loi "Informatique et libertés". \newline
+\pause
 
+Cette loi définit les données qui sont à caractères privées et donnent des obligations quant à ses collectes.
+\end{frame}
+
+\begin{frame}
+{\Large La vie privée est protégée}
+Par exemple~:
+\begin{itemize}
+	\item La collecte de données personnelle doit avoir reçu le consentement de la personne qui est concernée (~article 7~)~;
+	\pause
+	\item Toutes les données communiquées peuvent être modifiées, voir supprimées par simple demande (~article 34~)~;
+	\pause
+	\item Enfin, cette loi crée une "Commission Nationale de l'Informatique et des Libertés" (~CNIL~), qui vise à défendre cette loi et à remplir certaines missions (~Chapitre III~).
+\end{itemize}
+\end{frame}
+
+\subsection{Dans les faits}
+\begin{frame}
+{\Large Dans les faits}
+Dans les faits, la vie privée est très mal respecté sur le net. \newline
+\pause
+Les grands sites profitent généralement de leurs grands trafic afin de collecter le plus d'infos possible pour les revendre~:
+\pause
+\begin{itemize}
+	\item Facebook et son bouton j'aime permet de voir tous les sites que vous avez visités (~une grande partie de sites utilisent ce bouton~)~;
+	\pause
+	\item Google stocke toutes les recherches effectuées et les tries par IP.
+\end{itemize}
+\pause
+
+Pour échapper à ce genre de flicage, il suffit de ne pas donner ses infos à n'importe qui, mais des solutions plus extrêmes existent, comme utiliser un VPN (~Virtual Private Network~), refuser les cookies (~données stockés par un site sur le PC~), et la désactivation du JavaScript.
+\end{frame}
+
+\section{Questions}
+\begin{frame}
+\begin{center}
+{\LARGE Questions ?}
+\end{center}
+\end{frame}
 
 \end{document}
