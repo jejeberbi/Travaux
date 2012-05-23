@@ -6,7 +6,7 @@
 \usetheme{Goettingen}
 
 \date{Mai 2012}
-\author{Jejeberbi : www.jejeberbi.eu}
+\author{Jejeberbi : www.jejeberbi.eu} % Si vous réutilisez le document, vous pouvez, et même vous devez modifier ce champ ! ;)
 \title{Sécurité informatique, pas qu'une affaire de Geeks}
 
 \begin{document}
@@ -14,7 +14,7 @@
 \frame{\titlepage}
 
 \section{Avant de commencer}
-\begin{frame}
+\begin{frame} % Frame particulière puisque ce sont les compétences pour lesquelles on m'as demandés de faire cette présentation. Ces compétences sont dans le B2I, le brevet informatique passée pendant toute la scolarité au collège.
 {\Large Avant de commencer}
 \pause
 Cette présentation est en vue de valider quatres compétences du B2I, qui sont~:
@@ -44,7 +44,7 @@ Ainsi que de sensibiliser à la sécurité informatique.
 Les menaces virales sont les plus répandus, et ce sont celles qui peuvent faire beaucoup de dommages. Elles sont autonomes, une fois créées, elles n'ont pas besoin d'actions de leurs créateurs. \newline
 \pause
 Il en existe plusieurs sortes~:
-\begin{itemize}
+\begin{itemize} % La particularité de chacun d'entre eux sont détaillés à l'oral.
 	\item Les virus~;
 	\pause
 	\item Les vers~;
@@ -54,10 +54,11 @@ Il en existe plusieurs sortes~:
 	\item Les spywares.
 \end{itemize}
 \pause
-Même fonctionnement qu'un virus biologique~: contamination, infection.
+Même fonctionnement qu'un virus biologique~: contamination, infection. % Les menaces sont comparés aux maladies humaines, qui sont semblables sur la théorie. Les contaminations et les infections étant un sujet au programme de troisième, cela peut aider le spéctateur à mieux comprendre.
 \end{frame}
 
 \subsection{Comment s'en protéger ?}
+% Ici est aborder le sujet de la protection, avec pour mot d'ordre garde un anti-virus à jour, reste prudent, et ça devrait aller.
 \begin{frame}
 {\Large Comment s'en protéger ?}
 Dans l'absolu, la solution la plus fiable est de posséder un antivirus, tel que Avast!, Avira, MSE, etc... \newline
@@ -74,12 +75,14 @@ Voici quelques gestes pour limiter ces virus~:
 	\item Rester prudent.
 \end{itemize}
 \pause
-La solution extrème consiste à changer pour un système où il n'y a pas de virus (~Distribution Linux, Système Unix~), mais ça peut être contraignant.
+La solution extrème consiste à changer pour un système où il n'y a pas de virus (~Distribution Linux, Système Unix~), mais ça peut être contraignant. % Il fallait bien troller un peu...
 \end{frame}
+
 
 \section{Attaques informatiques}
 
 \subsection{Prise de contrôle, et autre hack}
+% La slide qui suit sert à sensibiliser aux problèmes des failles informatiques, et donc des MAJ nécéssaires.
 \begin{frame}
 {\Large Prise de contrôle, et autre hack}
 Cette menace consiste à attaquer manuellement une cible pré-définis, en profitant d'une faille de sécurité (~aussi appellé Backdoor~). \newline
@@ -88,17 +91,17 @@ Le protagoniste de cette attaque peut prendre le contrôle d'un PC pour voler des
 \pause
 Pour s'en protéger, il faut~:
 \begin{itemize}
-	\item Être équipé d'un pare-feu (~installé par défaut dans les versions récentes de Windows~)~;
+	\item Être équipé d'un pare-feu (~installé par défaut dans les versions récentes de Windows~)~; % Cela permet d'éviter les connexions entrantes non voulus.
 	\pause
-	\item Maintenir ses logiciels à jour~;
+	\item Maintenir ses logiciels à jour~; % Encore et toujours, pour éviter les failles de sécurité.
 	\pause
-	\item Ne pas donner les droits administrateur à n'importe quel logiciel qui le demande.
+	\item Ne pas donner les droits administrateur à n'importe quel logiciel qui le demande. % Inspirée d'une expérience avec un virus qui n'arrêtait pas de spammer la demande d'autorisation.
 \end{itemize}
 \pause
-En général, ce sont plus les professionels qui sont visés par ce genre d'attaque.
+En général, ce sont plus les professionels qui sont visés par ce genre d'attaque. % Pour avoir un geek à dos, faut y aller quand même...
 \end{frame}
 
-\subsection{Attaque DOS}
+\subsection{Attaque DOS} % Les attaques par déni de service sont abordé parceque l'on parle beaucoup des anonymous en ce moment.
 \begin{frame}
 {\Large Attaque DOS}
 \pause
@@ -111,10 +114,12 @@ C'est la technique qu'utilisent les anonymous afin de protester sur le Net. \new
 Ils le font grâce à un petit logiciel appellé LOIC (~Low Orbital Ion Canon~). \newline
 \end{frame}
 
+
 \section{Sur le web}
+
 \subsection{Spam}
 \begin{frame}
-{\Large Le Spam}
+{\Large Le Spam} % Le courier indésirable... Un sujet à aborder quand je vois un peut tout le monde avec 700 mail dans la boite de réception...
 Le spam, ce sont les couriers indésirables qui arrivent dans vos boites mails \newline
 \pause
 En général, ce n'est rien d'autre que de la pub.\newline
@@ -131,14 +136,16 @@ Voici comment l'éviter, ou bien le trier~:
 	\pause
 	\item Ne pas s'inscrire sur n'importe quel site (~ceux--ci peuvent collecter des adresses puis les revendre...~).
 \end{itemize}
-\end{frame} % Frame rempli, rien à rajouter dedans.
+\end{frame} 
+% Frame rempli, rien à rajouter dedans.
 
+% Slide sur l'hameçonnage.
 \subsection{Phishing}
 \begin{frame}
 {\Large Le Phishing}
 Le phishing est une technique consistant à immiter un site afin de voler votre mot de passe. \newline
 \pause
-L'exemple le plus parlant est l'imitation d'un site de banque afin de voler des numéros de cartes de crédits.
+L'exemple le plus parlant est l'imitation d'un site de banque afin de voler des numéros de cartes de crédits. % On parle de banque pour rester dans quelque chose de général, étant donné que la présentation est faite pour un jeune public, on abordera aussi le phishing de site de jeux en ligne
 \pause
 
 Pour s'en protéger~:
@@ -147,11 +154,13 @@ Pour s'en protéger~:
 	\pause
 	\item Vérifier si la page est sécurisée (~via la mention HTTPS dans l'URL~)~; % Via cette explication, la notion de chiffrement de données afin de ne pas être intercepter est aborder.
 	\pause
-	\item Pour être vraiment sûr, il faut vérifier le certificat d'authentification (~fonction disponible dans les principaux navigateurs~).
+	\item Pour être vraiment sûr, il faut vérifier le certificat d'authentification (~fonction disponible dans les principaux navigateurs~). % On continue les explication sur le certificat SSL et l'authentification des sites, pour savoir à qui ils appartiennent.
 \end{itemize}
 \end{frame}
 
+
 \section{Vie privée}
+
 \subsection{Protection de la vie privée}
 \begin{frame}
 {\Large La vie privée est protégée}
@@ -179,6 +188,7 @@ Par exemple~:
 \end{frame}
 
 \subsection{Dans les faits}
+% C'est ici que l'on troll de Facebook et Google.
 \begin{frame}
 {\Large Dans les faits}
 Dans les faits, la vie privée est très mal respectée sur le net. \newline
@@ -188,17 +198,17 @@ Les grands sites profitent généralement de leurs grands trafic afin de collecter
 \begin{itemize}
 	\item Facebook et son bouton j'aime permet de voir tous les sites que vous avez visités (~une grande partie de sites utilisent ce bouton~)~;
 	\pause
-	\item Google stocke toutes les recherches éffectuées et les tries par IP.
+	\item Google stocke toutes les recherches effectuées et les tries par IP.
 \end{itemize}
 \pause
 
-Pour échapper à ce genre de flicage, il suffit de ne pas donner ses infos à n'importe qui. Mais des solutions plus extrêmes existent, comme utiliser un VPN (~Virtual Private Network~), refuser les cookies (~données stockés par un site sur le PC~), et la désactivation du JavaScript.
+Pour échapper à ce genre de flicage, il suffit de ne pas donner ses infos à n'importe qui. Mais des solutions plus extrêmes existent, comme utiliser un VPN (~Virtual Private Network~), refuser les cookies (~données stockés par un site sur le PC~), et la désactivation du JavaScript. % Ici, on aborde la notion du VPN, afin de rester anonyme. On ne manquera pas de citer TOR à l'oral.
 \end{frame}
 
 \section{Questions}
 \begin{frame}
 \begin{center}
-{\LARGE Questions ?}
+{\LARGE Questions ?} % Le moment où personne n'as rien compris et que l'on doit tout ré-expliquer.
 \end{center}
 \end{frame}
 
